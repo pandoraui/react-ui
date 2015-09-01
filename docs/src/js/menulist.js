@@ -2,13 +2,13 @@
 
 module.exports = [
   [
+    { route: 'datetime', text: 'Datetime', handler: require('./pages/datetime.jsx') }
     /*
     { route: 'form', text: 'Form', handler: require('./pages/form.jsx') },
     { route: 'formControl', text: 'FormControl', handler: require('./pages/formControl.jsx') },
     { route: 'formSubmit', text: 'FormSubmit', handler: require('./pages/formSubmit.jsx') },
     { route: 'checkbox', text: 'Checkbox', handler: require('./pages/checkbox.jsx') },
     { route: 'checkboxGroup', text: 'CheckboxGroup', handler: require('./pages/checkboxGroup.jsx') },
-    { route: 'datetime', text: 'Datetime', handler: require('./pages/datetime.jsx') },
     { route: 'input', text: 'Input', handler: require('./pages/input.jsx') },
     { route: 'radioGroup', text: 'RadioGroup', handler: require('./pages/radioGroup.jsx') },
     { route: 'rating', text: 'Rating', handler: require('./pages/rating.jsx') },

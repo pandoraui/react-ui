@@ -37,8 +37,9 @@
     "classnames": "^2.1.2",
     "qwest": "^1.7.0",
     "rctui-button": "^0.1.2",
+    "rctui-datetime": "^0.1.0",
     "rctui-icon": "^0.1.0",
-    "rctui-lang": "^0.1.0"
+    "rctui-lang": "^0.1.5"
   },
   "devDependencies": {
     "MD5": "^1.2.2",
@@ -71,8 +72,5 @@
     "url-loader": "^0.5.6",
     "webpack": "^1.9.10",
     "webpack-dev-server": "^1.9.0"
-  },
-  "peerDependencies": {
-    "react": "^0.13.3"
   }
 }
