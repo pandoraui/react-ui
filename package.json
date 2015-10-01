@@ -6,8 +6,8 @@
   "main": "./src/js/index.js",
   "scripts": {
     "test": "./node_modules/.bin/_mocha --compilers js:babel/register",
-    "docs-dev": "webpack --config webpack-docs.config.js --watch",
-    "docs-publish": "webpack --config webpack-docs.config.js --min"
+    "dev": "webpack --config webpack-docs.config.js --watch",
+    "build": "webpack --config webpack-docs.config.js --min"
   },
   "keywords": [
     "react ui",

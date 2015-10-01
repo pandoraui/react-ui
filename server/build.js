@@ -35,28 +35,28 @@ function build(key, minimize, separateStylesheet, callback) {
     ], 
     plugins: [
       new webpack.PrefetchPlugin("react"),
-		  new webpack.PrefetchPlugin("react/lib/ReactComponentBrowserEnvironment"),
+      new webpack.PrefetchPlugin("react/lib/ReactComponentBrowserEnvironment"),
       new webpack.DefinePlugin({
-				"process.env": {
-					NODE_ENV: JSON.stringify("production")
-				}
-			})
+        "process.env": {
+          NODE_ENV: JSON.stringify("production")
+        }
+      })
     ]
   }
 
   if (minimize) {
     config.plugins.push(
       new webpack.optimize.UglifyJsPlugin({
-				compressor: {
-					warnings: false
-				}
-			}),
-			new webpack.optimize.DedupePlugin()
+        compressor: {
+          warnings: false
+        }
+      }),
+      new webpack.optimize.DedupePlugin()
     )
   }
 
   if (separateStylesheet) {
-		config.plugins.push(
+    config.plugins.push(
       new ExtractTextPlugin("[name].css")
     )
     config.module.loaders.push(
