@@ -8,6 +8,7 @@ module.exports = require("./make-webpack-config")({
   },
   debug: true,
   separateStylesheet: true,
+  externals: {"react": "React", "react-dom": "ReactDOM"},
   path: "./docs/dist"
   //library: "app"
 });

@@ -2,26 +2,19 @@
 
 global.uiRequire = function (src) {
   if (src) {
-    return require('../../../src/js/' + src)
+    return require('../../../src/' + src)
   } else {
-    return require('../../../src/js')
+    return require('../../../src/')
   }
 }
 
-const React = require('react')
-const Router = require('react-router')
+import ReactDOM from 'react-dom'
 const AppRoutes = require('./app-routes.jsx')
 
-// load language
-global.uiRequire('lang/zh-cn')
-
-Router.create({
-  routes: AppRoutes,
-  scrollBehavior: Router.ScrollToTopBehavior
-})
-.run(function (Handler) {
-  React.render(<Handler />, document.body)
-})
+ReactDOM.render(
+  AppRoutes,
+  document.getElementById('body')
+)
 
 // static files
 require('file?name=index.html!../index.html')
